@@ -1,0 +1,27 @@
+# do full_adder_1_bit.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Q1
+# 
+# Top level modules:
+# 	Q1
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Q1_vlg_sample_tst
+# -- Compiling module Q1_vlg_check_tst
+# -- Compiling module Q1_vlg_vec_tst
+# 
+# Top level modules:
+# 	Q1_vlg_vec_tst
+# vsim -L maxv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.Q1_vlg_vec_tst 
+# Loading work.Q1_vlg_vec_tst
+# Loading work.Q1
+# Loading maxv_ver.maxv_io
+# Loading maxv_ver.maxv_lcell
+# Loading maxv_ver.maxv_asynch_lcell
+# Loading maxv_ver.maxv_lcell_register
+# Loading work.Q1_vlg_sample_tst
+# Loading work.Q1_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform13.vwf.vt(893)
+#    Time: 1 us  Iteration: 0  Instance: /Q1_vlg_vec_tst/tb_out

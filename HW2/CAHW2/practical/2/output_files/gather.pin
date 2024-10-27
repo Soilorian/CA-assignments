@@ -1,0 +1,973 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:	2.5V
+ --					Bank 9:	2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --           	    either individually through a 10k Ohm resistor to GND or tie all pins
+ --           	    together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+CHIP  "gather"  ASSIGNED TO AN: EP4CGX150DF31C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+index4_[9]                   : A4        : output : 2.5 V             :         : 8         : N              
+index1_[15]                  : A5        : output : 2.5 V             :         : 8         : N              
+index_vector[29]             : A6        : input  : 2.5 V             :         : 8         : N              
+data_7_[8]                   : A7        : input  : 2.5 V             :         : 8         : N              
+data_13_[2]                  : A8        : input  : 2.5 V             :         : 8         : N              
+index_vector[44]             : A9        : input  : 2.5 V             :         : 8         : N              
+data_7_[2]                   : A10       : input  : 2.5 V             :         : 8         : N              
+data_12_[9]                  : A11       : input  : 2.5 V             :         : 8         : N              
+data_12_[1]                  : A12       : input  : 2.5 V             :         : 8         : N              
+data_1_[1]                   : A13       : input  : 2.5 V             :         : 8         : N              
+data_11_[13]                 : A14       : input  : 2.5 V             :         : 8         : N              
+data_15_[15]                 : A15       : input  : 2.5 V             :         : 7         : N              
+data_0_[10]                  : A16       : input  : 2.5 V             :         : 7         : N              
+data_1_[8]                   : A17       : input  : 2.5 V             :         : 7         : N              
+data_6_[6]                   : A18       : input  : 2.5 V             :         : 7         : N              
+data_13_[15]                 : A19       : input  : 2.5 V             :         : 7         : N              
+data_8_[9]                   : A20       : input  : 2.5 V             :         : 7         : N              
+data_10_[6]                  : A21       : input  : 2.5 V             :         : 7         : N              
+data_11_[6]                  : A22       : input  : 2.5 V             :         : 7         : N              
+data_1_[11]                  : A23       : input  : 2.5 V             :         : 7         : N              
+data_2_[5]                   : A24       : input  : 2.5 V             :         : 7         : N              
+data_6_[9]                   : A25       : input  : 2.5 V             :         : 7         : N              
+data_11_[9]                  : A26       : input  : 2.5 V             :         : 7         : N              
+data_6_[4]                   : A27       : input  : 2.5 V             :         : 7         : N              
+data_1_[13]                  : A28       : input  : 2.5 V             :         : 7         : N              
+data_2_[15]                  : A29       : input  : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+data_6_[14]                  : AA12      : input  : 2.5 V             :         : 3         : N              
+data_12_[0]                  : AA13      : input  : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+data_8_[1]                   : AA15      : input  : 2.5 V             :         : 3         : N              
+data_9_[0]                   : AA16      : input  : 2.5 V             :         : 3         : N              
+selected4_[14]               : AA17      : output : 2.5 V             :         : 4         : N              
+data_3_[15]                  : AA18      : input  : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+index2_[14]                  : AA20      : output : 2.5 V             :         : 4         : N              
+data_4_[11]                  : AA21      : input  : 2.5 V             :         : 4         : N              
+selected2_[14]               : AA22      : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+index_vector[8]              : AA25      : input  : 2.5 V             :         : 5         : N              
+index_vector[6]              : AA26      : input  : 2.5 V             :         : 5         : N              
+index1_[6]                   : AA27      : output : 2.5 V             :         : 5         : N              
+data_10_[15]                 : AA28      : input  : 2.5 V             :         : 5         : N              
+data_8_[15]                  : AA29      : input  : 2.5 V             :         : 5         : N              
+selected3_[11]               : AA30      : output : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+data_11_[0]                  : AB11      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+data_14_[0]                  : AB13      : input  : 2.5 V             :         : 3         : N              
+data_9_[1]                   : AB14      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+data_8_[2]                   : AB16      : input  : 2.5 V             :         : 3         : N              
+data_13_[14]                 : AB17      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+data_13_[12]                 : AB21      : input  : 2.5 V             :         : 4         : N              
+index_vector[2]              : AB22      : input  : 2.5 V             :         : 4         : N              
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+index1_[8]                   : AB25      : output : 2.5 V             :         : 5         : N              
+index_vector[9]              : AB26      : input  : 2.5 V             :         : 5         : N              
+selected2_[5]                : AB27      : output : 2.5 V             :         : 5         : N              
+index_vector[37]             : AB28      : input  : 2.5 V             :         : 5         : N              
+data_13_[1]                  : AB29      : input  : 2.5 V             :         : 5         : N              
+selected2_[0]                : AB30      : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+data_6_[2]                   : AC16      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+index1_[9]                   : AC25      : output : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+selected1_[5]                : AC27      : output : 2.5 V             :         : 5         : N              
+index3_[5]                   : AC28      : output : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+selected2_[13]               : AC30      : output : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD6       :        :                   :         : 3         :                
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+index4_[3]                   : AD9       : output : 2.5 V             :         : 3         : N              
+index_vector[48]             : AD10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+data_4_[0]                   : AD16      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+data_10_[11]                 : AD22      : input  : 2.5 V             :         : 4         : N              
+index2_[5]                   : AD23      : output : 2.5 V             :         : 4         : N              
+index_vector[22]             : AD24      : input  : 2.5 V             :         : 4         : N              
+index_vector[41]             : AD25      : input  : 2.5 V             :         : 5         : N              
+index3_[9]                   : AD26      : output : 2.5 V             :         : 5         : N              
+selected3_[3]                : AD27      : output : 2.5 V             :         : 5         : N              
+selected2_[1]                : AD28      : output : 2.5 V             :         : 5         : N              
+selected2_[9]                : AD29      : output : 2.5 V             :         : 5         : N              
+selected1_[0]                : AD30      : output : 2.5 V             :         : 5         : N              
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+index2_[9]                   : AE3       : output : 2.5 V             :         : 3         : N              
+index_vector[58]             : AE4       : input  : 2.5 V             :         : 3         : N              
+index_vector[27]             : AE5       : input  : 2.5 V             :         : 3         : N              
+index_vector[59]             : AE6       : input  : 2.5 V             :         : 3         : N              
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE8       :        :                   :         : 3         :                
+index2_[11]                  : AE9       : output : 2.5 V             :         : 3         : N              
+index2_[10]                  : AE10      : output : 2.5 V             :         : 3         : N              
+index4_[0]                   : AE11      : output : 2.5 V             :         : 3         : N              
+index3_[7]                   : AE12      : output : 2.5 V             :         : 3         : N              
+data_9_[14]                  : AE13      : input  : 2.5 V             :         : 3         : N              
+data_2_[14]                  : AE14      : input  : 2.5 V             :         : 3         : N              
+data_8_[14]                  : AE15      : input  : 2.5 V             :         : 3         : N              
+selected3_[13]               : AE16      : output : 2.5 V             :         : 4         : N              
+data_15_[14]                 : AE17      : input  : 2.5 V             :         : 4         : N              
+selected3_[10]               : AE18      : output : 2.5 V             :         : 4         : N              
+data_9_[4]                   : AE19      : input  : 2.5 V             :         : 4         : N              
+data_3_[11]                  : AE20      : input  : 2.5 V             :         : 4         : N              
+data_14_[11]                 : AE21      : input  : 2.5 V             :         : 4         : N              
+data_6_[11]                  : AE22      : input  : 2.5 V             :         : 4         : N              
+index_vector[23]             : AE23      : input  : 2.5 V             :         : 4         : N              
+index2_[6]                   : AE24      : output : 2.5 V             :         : 4         : N              
+index1_[5]                   : AE25      : output : 2.5 V             :         : 5         : N              
+index_vector[11]             : AE26      : input  : 2.5 V             :         : 5         : N              
+index3_[0]                   : AE27      : output : 2.5 V             :         : 5         : N              
+index_vector[32]             : AE28      : input  : 2.5 V             :         : 5         : N              
+index_vector[16]             : AE29      : input  : 2.5 V             :         : 5         : N              
+index2_[0]                   : AE30      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+index4_[2]                   : AF3       : output : 2.5 V             :         : 3         : N              
+index_vector[26]             : AF4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AF5       : gnd    :                   :         :           :                
+index_vector[56]             : AF6       : input  : 2.5 V             :         : 3         : N              
+index4_[8]                   : AF7       : output : 2.5 V             :         : 3         : N              
+GND                          : AF8       : gnd    :                   :         :           :                
+index4_[10]                  : AF9       : output : 2.5 V             :         : 3         : N              
+index2_[8]                   : AF10      : output : 2.5 V             :         : 3         : N              
+GND                          : AF11      : gnd    :                   :         :           :                
+index_vector[39]             : AF12      : input  : 2.5 V             :         : 3         : N              
+selected3_[14]               : AF13      : output : 2.5 V             :         : 3         : N              
+GND                          : AF14      : gnd    :                   :         :           :                
+data_9_[9]                   : AF15      : input  : 2.5 V             :         : 3         : N              
+selected3_[0]                : AF16      : output : 2.5 V             :         : 4         : N              
+GND                          : AF17      : gnd    :                   :         :           :                
+data_3_[14]                  : AF18      : input  : 2.5 V             :         : 4         : N              
+data_2_[7]                   : AF19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+data_12_[15]                 : AF21      : input  : 2.5 V             :         : 4         : N              
+data_6_[3]                   : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+index1_[10]                  : AF24      : output : 2.5 V             :         : 4         : N              
+index_vector[10]             : AF25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF26      : gnd    :                   :         :           :                
+selected1_[1]                : AF27      : output : 2.5 V             :         : 5         : N              
+selected3_[1]                : AF28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+index_vector[18]             : AF30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+index_vector[25]             : AG3       : input  : 2.5 V             :         : 3         : N              
+index_vector[24]             : AG4       : input  : 2.5 V             :         : 3         : N              
+index_vector[54]             : AG5       : input  : 2.5 V             :         : 3         : N              
+index4_[11]                  : AG6       : output : 2.5 V             :         : 3         : N              
+data_3_[10]                  : AG7       : input  : 2.5 V             :         : 3         : N              
+data_1_[10]                  : AG8       : input  : 2.5 V             :         : 3         : N              
+data_10_[1]                  : AG9       : input  : 2.5 V             :         : 3         : N              
+index3_[2]                   : AG10      : output : 2.5 V             :         : 3         : N              
+index3_[4]                   : AG11      : output : 2.5 V             :         : 3         : N              
+index_vector[36]             : AG12      : input  : 2.5 V             :         : 3         : N              
+selected3_[7]                : AG13      : output : 2.5 V             :         : 3         : N              
+data_13_[6]                  : AG14      : input  : 2.5 V             :         : 3         : N              
+index_vector[60]             : AG15      : input  : 2.5 V             :         : 3         : N              
+data_4_[2]                   : AG16      : input  : 2.5 V             :         : 4         : N              
+selected3_[6]                : AG17      : output : 2.5 V             :         : 4         : N              
+data_0_[7]                   : AG18      : input  : 2.5 V             :         : 4         : N              
+data_4_[5]                   : AG19      : input  : 2.5 V             :         : 4         : N              
+data_13_[11]                 : AG20      : input  : 2.5 V             :         : 4         : N              
+data_13_[7]                  : AG21      : input  : 2.5 V             :         : 4         : N              
+data_3_[3]                   : AG22      : input  : 2.5 V             :         : 4         : N              
+index_vector[38]             : AG23      : input  : 2.5 V             :         : 4         : N              
+data_12_[5]                  : AG24      : input  : 2.5 V             :         : 4         : N              
+index_vector[21]             : AG25      : input  : 2.5 V             :         : 4         : N              
+index1_[2]                   : AG26      : output : 2.5 V             :         : 4         : N              
+index1_[3]                   : AG27      : output : 2.5 V             :         : 4         : N              
+index_vector[20]             : AG28      : input  : 2.5 V             :         : 4         : N              
+index_vector[4]              : AG29      : input  : 2.5 V             :         : 5         : N              
+index2_[2]                   : AG30      : output : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+index4_[1]                   : AH2       : output : 2.5 V             :         : 3         : N              
+index_vector[50]             : AH3       : input  : 2.5 V             :         : 3         : N              
+index_vector[49]             : AH4       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH5       :        :                   :         : 3         :                
+index3_[1]                   : AH6       : output : 2.5 V             :         : 3         : N              
+data_0_[2]                   : AH7       : input  : 2.5 V             :         : 3         : N              
+data_13_[0]                  : AH8       : input  : 2.5 V             :         : 3         : N              
+index_vector[42]             : AH9       : input  : 2.5 V             :         : 3         : N              
+index3_[3]                   : AH10      : output : 2.5 V             :         : 3         : N              
+index_vector[40]             : AH11      : input  : 2.5 V             :         : 3         : N              
+index_vector[35]             : AH12      : input  : 2.5 V             :         : 3         : N              
+index_vector[34]             : AH13      : input  : 2.5 V             :         : 3         : N              
+data_7_[1]                   : AH14      : input  : 2.5 V             :         : 3         : N              
+index_vector[14]             : AH15      : input  : 2.5 V             :         : 3         : N              
+data_15_[0]                  : AH16      : input  : 2.5 V             :         : 3         : N              
+data_2_[1]                   : AH17      : input  : 2.5 V             :         : 4         : N              
+data_8_[0]                   : AH18      : input  : 2.5 V             :         : 4         : N              
+data_10_[7]                  : AH19      : input  : 2.5 V             :         : 4         : N              
+data_7_[5]                   : AH20      : input  : 2.5 V             :         : 4         : N              
+data_15_[4]                  : AH21      : input  : 2.5 V             :         : 4         : N              
+data_1_[5]                   : AH22      : input  : 2.5 V             :         : 4         : N              
+selected3_[15]               : AH23      : output : 2.5 V             :         : 4         : N              
+data_9_[7]                   : AH24      : input  : 2.5 V             :         : 4         : N              
+index3_[6]                   : AH25      : output : 2.5 V             :         : 4         : N              
+index_vector[3]              : AH26      : input  : 2.5 V             :         : 4         : N              
+index2_[7]                   : AH27      : output : 2.5 V             :         : 4         : N              
+index2_[4]                   : AH28      : output : 2.5 V             :         : 4         : N              
+index_vector[7]              : AH29      : input  : 2.5 V             :         : 5         : N              
+index_vector[5]              : AH30      : input  : 2.5 V             :         : 5         : N              
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+index_vector[51]             : AJ3       : input  : 2.5 V             :         : 3         : N              
+index4_[6]                   : AJ4       : output : 2.5 V             :         : 3         : N              
+GND                          : AJ5       : gnd    :                   :         :           :                
+index_vector[33]             : AJ6       : input  : 2.5 V             :         : 3         : N              
+data_6_[10]                  : AJ7       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+index2_[15]                  : AJ9       : output : 2.5 V             :         : 3         : N              
+index3_[8]                   : AJ10      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ11      : gnd    :                   :         :           :                
+data_5_[2]                   : AJ12      : input  : 2.5 V             :         : 3         : N              
+selected4_[4]                : AJ13      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+data_7_[0]                   : AJ15      : input  : 2.5 V             :         : 4         : N              
+index_vector[0]              : AJ16      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ17      : gnd    :                   :         :           :                
+selected4_[9]                : AJ18      : output : 2.5 V             :         : 4         : N              
+data_15_[6]                  : AJ19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+data_14_[5]                  : AJ21      : input  : 2.5 V             :         : 4         : N              
+index_vector[13]             : AJ22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+data_9_[5]                   : AJ24      : input  : 2.5 V             :         : 4         : N              
+data_8_[6]                   : AJ25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+selected3_[9]                : AJ27      : output : 2.5 V             :         : 4         : N              
+data_3_[9]                   : AJ28      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ29      : gnd    :                   :         :           :                
+index1_[4]                   : AJ30      : output : 2.5 V             :         : 5         : N              
+NC                           : AK2       :        :                   :         :           :                
+data_0_[8]                   : AK3       : input  : 2.5 V             :         : 3         : N              
+data_1_[0]                   : AK4       : input  : 2.5 V             :         : 3         : N              
+data_6_[0]                   : AK5       : input  : 2.5 V             :         : 3         : N              
+index3_[10]                  : AK6       : output : 2.5 V             :         : 3         : N              
+data_10_[0]                  : AK7       : input  : 2.5 V             :         : 3         : N              
+selected3_[8]                : AK8       : output : 2.5 V             :         : 3         : N              
+selected3_[12]               : AK9       : output : 2.5 V             :         : 3         : N              
+index_vector[31]             : AK10      : input  : 2.5 V             :         : 3         : N              
+index4_[12]                  : AK11      : output : 2.5 V             :         : 3         : N              
+data_6_[12]                  : AK12      : input  : 2.5 V             :         : 3         : N              
+data_5_[12]                  : AK13      : input  : 2.5 V             :         : 3         : N              
+index1_[14]                  : AK14      : output : 2.5 V             :         : 3         : N              
+data_0_[0]                   : AK15      : input  : 2.5 V             :         : 4         : N              
+index_vector[1]              : AK16      : input  : 2.5 V             :         : 4         : N              
+data_3_[0]                   : AK17      : input  : 2.5 V             :         : 4         : N              
+data_14_[8]                  : AK18      : input  : 2.5 V             :         : 4         : N              
+data_5_[0]                   : AK19      : input  : 2.5 V             :         : 4         : N              
+data_3_[5]                   : AK20      : input  : 2.5 V             :         : 4         : N              
+index1_[13]                  : AK21      : output : 2.5 V             :         : 4         : N              
+data_7_[11]                  : AK22      : input  : 2.5 V             :         : 4         : N              
+data_9_[15]                  : AK23      : input  : 2.5 V             :         : 4         : N              
+data_15_[11]                 : AK24      : input  : 2.5 V             :         : 4         : N              
+data_8_[5]                   : AK25      : input  : 2.5 V             :         : 4         : N              
+data_9_[6]                   : AK26      : input  : 2.5 V             :         : 4         : N              
+selected2_[3]                : AK27      : output : 2.5 V             :         : 4         : N              
+data_12_[7]                  : AK28      : input  : 2.5 V             :         : 4         : N              
+index1_[1]                   : AK29      : output : 2.5 V             :         : 4         : N              
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+index3_[12]                  : B6        : output : 2.5 V             :         : 8         : N              
+selected4_[7]                : B7        : output : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+data_14_[14]                 : B9        : input  : 2.5 V             :         : 8         : N              
+data_7_[14]                  : B10       : input  : 2.5 V             :         : 8         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+data_2_[0]                   : B12       : input  : 2.5 V             :         : 8         : N              
+data_12_[14]                 : B13       : input  : 2.5 V             :         : 8         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+GND+                         : B15       :        :                   :         : 7         :                
+selected4_[1]                : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+data_0_[14]                  : B18       : input  : 2.5 V             :         : 7         : N              
+data_5_[13]                  : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+data_2_[6]                   : B21       : input  : 2.5 V             :         : 7         : N              
+data_14_[3]                  : B22       : input  : 2.5 V             :         : 7         : N              
+GND                          : B23       : gnd    :                   :         :           :                
+data_7_[12]                  : B24       : input  : 2.5 V             :         : 7         : N              
+index_vector[45]             : B25       : input  : 2.5 V             :         : 7         : N              
+GND                          : B26       : gnd    :                   :         :           :                
+data_14_[9]                  : B27       : input  : 2.5 V             :         : 7         : N              
+data_15_[12]                 : B28       : input  : 2.5 V             :         : 7         : N              
+GND                          : B29       : gnd    :                   :         :           :                
+data_11_[4]                  : B30       : input  : 2.5 V             :         : 7         : N              
+nCE                          : C1        :        :                   :         : 9         :                
+index4_[7]                   : C2        : output : 2.5 V             :         : 8         : N              
+data_4_[6]                   : C3        : input  : 2.5 V             :         : 8         : N              
+data_10_[13]                 : C4        : input  : 2.5 V             :         : 8         : N              
+data_1_[14]                  : C5        : input  : 2.5 V             :         : 8         : N              
+data_5_[14]                  : C6        : input  : 2.5 V             :         : 8         : N              
+data_1_[15]                  : C7        : input  : 2.5 V             :         : 8         : N              
+index_vector[52]             : C8        : input  : 2.5 V             :         : 8         : N              
+index4_[4]                   : C9        : output : 2.5 V             :         : 8         : N              
+data_10_[10]                 : C10       : input  : 2.5 V             :         : 8         : N              
+data_11_[8]                  : C11       : input  : 2.5 V             :         : 8         : N              
+index_vector[28]             : C12       : input  : 2.5 V             :         : 8         : N              
+data_5_[1]                   : C13       : input  : 2.5 V             :         : 8         : N              
+data_4_[10]                  : C14       : input  : 2.5 V             :         : 8         : N              
+selected4_[3]                : C15       : output : 2.5 V             :         : 8         : N              
+data_15_[8]                  : C16       : input  : 2.5 V             :         : 8         : N              
+data_1_[2]                   : C17       : input  : 2.5 V             :         : 7         : N              
+data_6_[1]                   : C18       : input  : 2.5 V             :         : 7         : N              
+data_13_[13]                 : C19       : input  : 2.5 V             :         : 7         : N              
+data_0_[12]                  : C20       : input  : 2.5 V             :         : 7         : N              
+data_9_[11]                  : C21       : input  : 2.5 V             :         : 7         : N              
+data_11_[12]                 : C22       : input  : 2.5 V             :         : 7         : N              
+data_7_[3]                   : C23       : input  : 2.5 V             :         : 7         : N              
+index3_[13]                  : C24       : output : 2.5 V             :         : 7         : N              
+data_6_[13]                  : C25       : input  : 2.5 V             :         : 7         : N              
+data_8_[13]                  : C26       : input  : 2.5 V             :         : 7         : N              
+data_8_[11]                  : C27       : input  : 2.5 V             :         : 7         : N              
+data_12_[12]                 : C28       : input  : 2.5 V             :         : 7         : N              
+selected1_[13]               : C29       : output : 2.5 V             :         : 6         : N              
+data_4_[1]                   : C30       : input  : 2.5 V             :         : 6         : N              
+index_vector[43]             : D1        : input  : 2.5 V             :         : 8         : N              
+GND                          : D2        : gnd    :                   :         :           :                
+data_3_[2]                   : D3        : input  : 2.5 V             :         : 8         : N              
+data_15_[10]                 : D4        : input  : 2.5 V             :         : 8         : N              
+selected4_[12]               : D5        : output : 2.5 V             :         : 8         : N              
+selected4_[11]               : D6        : output : 2.5 V             :         : 8         : N              
+data_6_[8]                   : D7        : input  : 2.5 V             :         : 8         : N              
+data_5_[8]                   : D8        : input  : 2.5 V             :         : 8         : N              
+index4_[5]                   : D9        : output : 2.5 V             :         : 8         : N              
+data_14_[2]                  : D10       : input  : 2.5 V             :         : 8         : N              
+data_8_[8]                   : D11       : input  : 2.5 V             :         : 8         : N              
+index2_[12]                  : D12       : output : 2.5 V             :         : 8         : N              
+data_14_[10]                 : D13       : input  : 2.5 V             :         : 8         : N              
+selected4_[10]               : D14       : output : 2.5 V             :         : 8         : N              
+selected4_[6]                : D15       : output : 2.5 V             :         : 8         : N              
+index3_[14]                  : D16       : output : 2.5 V             :         : 8         : N              
+index4_[15]                  : D17       : output : 2.5 V             :         : 7         : N              
+selected4_[8]                : D18       : output : 2.5 V             :         : 7         : N              
+data_2_[9]                   : D19       : input  : 2.5 V             :         : 7         : N              
+data_4_[12]                  : D20       : input  : 2.5 V             :         : 7         : N              
+data_0_[3]                   : D21       : input  : 2.5 V             :         : 7         : N              
+data_15_[13]                 : D22       : input  : 2.5 V             :         : 7         : N              
+data_4_[13]                  : D23       : input  : 2.5 V             :         : 7         : N              
+data_3_[1]                   : D24       : input  : 2.5 V             :         : 7         : N              
+data_2_[13]                  : D25       : input  : 2.5 V             :         : 7         : N              
+data_7_[13]                  : D26       : input  : 2.5 V             :         : 7         : N              
+data_11_[15]                 : D27       : input  : 2.5 V             :         : 7         : N              
+data_2_[11]                  : D28       : input  : 2.5 V             :         : 7         : N              
+data_15_[9]                  : D29       : input  : 2.5 V             :         : 6         : N              
+selected4_[2]                : D30       : output : 2.5 V             :         : 6         : N              
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+index3_[11]                  : E3        : output : 2.5 V             :         : 8         : N              
+data_11_[10]                 : E4        : input  : 2.5 V             :         : 8         : N              
+GND                          : E5        : gnd    :                   :         :           :                
+data_9_[2]                   : E6        : input  : 2.5 V             :         : 8         : N              
+data_10_[14]                 : E7        : input  : 2.5 V             :         : 8         : N              
+GND                          : E8        : gnd    :                   :         :           :                
+selected4_[13]               : E9        : output : 2.5 V             :         : 8         : N              
+index_vector[53]             : E10       : input  : 2.5 V             :         : 8         : N              
+GND                          : E11       : gnd    :                   :         :           :                
+index2_[13]                  : E12       : output : 2.5 V             :         : 8         : N              
+data_2_[8]                   : E13       : input  : 2.5 V             :         : 8         : N              
+GND                          : E14       : gnd    :                   :         :           :                
+data_7_[6]                   : E15       : input  : 2.5 V             :         : 8         : N              
+data_10_[9]                  : E16       : input  : 2.5 V             :         : 8         : N              
+GND                          : E17       : gnd    :                   :         :           :                
+data_10_[12]                 : E18       : input  : 2.5 V             :         : 7         : N              
+data_6_[5]                   : E19       : input  : 2.5 V             :         : 7         : N              
+GND                          : E20       : gnd    :                   :         :           :                
+data_4_[4]                   : E21       : input  : 2.5 V             :         : 7         : N              
+data_2_[12]                  : E22       : input  : 2.5 V             :         : 7         : N              
+GND                          : E23       : gnd    :                   :         :           :                
+data_5_[9]                   : E24       : input  : 2.5 V             :         : 7         : N              
+data_3_[13]                  : E25       : input  : 2.5 V             :         : 7         : N              
+GND                          : E26       : gnd    :                   :         :           :                
+index_vector[17]             : E27       : input  : 2.5 V             :         : 6         : N              
+index2_[1]                   : E28       : output : 2.5 V             :         : 6         : N              
+GND                          : E29       : gnd    :                   :         :           :                
+index_vector[61]             : E30       : input  : 2.5 V             :         : 6         : N              
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+data_4_[8]                   : F4        : input  : 2.5 V             :         : 8         : N              
+data_10_[2]                  : F5        : input  : 2.5 V             :         : 8         : N              
+data_14_[6]                  : F6        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
+index_vector[57]             : F8        : input  : 2.5 V             :         : 8         : N              
+index_vector[55]             : F9        : input  : 2.5 V             :         : 8         : N              
+data_0_[1]                   : F10       : input  : 2.5 V             :         : 8         : N              
+data_14_[13]                 : F11       : input  : 2.5 V             :         : 8         : N              
+data_8_[10]                  : F12       : input  : 2.5 V             :         : 8         : N              
+selected4_[0]                : F13       : output : 2.5 V             :         : 8         : N              
+data_5_[6]                   : F14       : input  : 2.5 V             :         : 8         : N              
+data_1_[9]                   : F15       : input  : 2.5 V             :         : 8         : N              
+index_vector[46]             : F16       : input  : 2.5 V             :         : 8         : N              
+data_14_[7]                  : F17       : input  : 2.5 V             :         : 7         : N              
+data_4_[14]                  : F18       : input  : 2.5 V             :         : 7         : N              
+data_12_[8]                  : F19       : input  : 2.5 V             :         : 7         : N              
+data_11_[7]                  : F20       : input  : 2.5 V             :         : 7         : N              
+data_1_[7]                   : F21       : input  : 2.5 V             :         : 7         : N              
+data_13_[4]                  : F22       : input  : 2.5 V             :         : 7         : N              
+data_13_[3]                  : F23       : input  : 2.5 V             :         : 7         : N              
+selected3_[2]                : F24       : output : 2.5 V             :         : 7         : N              
+data_13_[5]                  : F25       : input  : 2.5 V             :         : 7         : N              
+data_2_[10]                  : F26       : input  : 2.5 V             :         : 6         : N              
+data_0_[13]                  : F27       : input  : 2.5 V             :         : 6         : N              
+data_4_[15]                  : F28       : input  : 2.5 V             :         : 6         : N              
+data_5_[15]                  : F29       : input  : 2.5 V             :         : 6         : N              
+index4_[13]                  : F30       : output : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+data_13_[8]                  : G6        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+data_9_[8]                   : G10       : input  : 2.5 V             :         : 8         : N              
+index_vector[15]             : G11       : input  : 2.5 V             :         : 8         : N              
+data_12_[2]                  : G12       : input  : 2.5 V             :         : 8         : N              
+data_7_[10]                  : G13       : input  : 2.5 V             :         : 8         : N              
+data_15_[1]                  : G14       : input  : 2.5 V             :         : 8         : N              
+data_9_[10]                  : G15       : input  : 2.5 V             :         : 8         : N              
+data_10_[8]                  : G16       : input  : 2.5 V             :         : 7         : N              
+data_6_[7]                   : G17       : input  : 2.5 V             :         : 7         : N              
+data_2_[2]                   : G18       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+data_3_[12]                  : G20       : input  : 2.5 V             :         : 7         : N              
+data_10_[5]                  : G21       : input  : 2.5 V             :         : 7         : N              
+data_7_[7]                   : G22       : input  : 2.5 V             :         : 7         : N              
+data_10_[3]                  : G23       : input  : 2.5 V             :         : 7         : N              
+data_11_[3]                  : G24       : input  : 2.5 V             :         : 7         : N              
+data_12_[13]                 : G25       : input  : 2.5 V             :         : 7         : N              
+index_vector[19]             : G26       : input  : 2.5 V             :         : 6         : N              
+index2_[3]                   : G27       : output : 2.5 V             :         : 6         : N              
+data_8_[4]                   : G28       : input  : 2.5 V             :         : 6         : N              
+data_11_[1]                  : G29       : input  : 2.5 V             :         : 6         : N              
+data_15_[7]                  : G30       : input  : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+data_9_[13]                  : H9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+index1_[12]                  : H24       : output : 2.5 V             :         : 7         : N              
+data_1_[6]                   : H25       : input  : 2.5 V             :         : 6         : N              
+GND                          : H26       : gnd    :                   :         :           :                
+data_12_[11]                 : H27       : input  : 2.5 V             :         : 6         : N              
+data_1_[3]                   : H28       : input  : 2.5 V             :         : 6         : N              
+GND                          : H29       : gnd    :                   :         :           :                
+data_5_[7]                   : H30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+data_3_[8]                   : J9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+data_3_[6]                   : J25       : input  : 2.5 V             :         : 6         : N              
+data_1_[12]                  : J26       : input  : 2.5 V             :         : 6         : N              
+data_0_[4]                   : J27       : input  : 2.5 V             :         : 6         : N              
+data_4_[3]                   : J28       : input  : 2.5 V             :         : 6         : N              
+data_2_[3]                   : J29       : input  : 2.5 V             :         : 6         : N              
+data_5_[11]                  : J30       : input  : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+GXB_GND*                     : K15       :        :                   :         : 8A        :                
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+data_15_[2]                  : K17       : input  : 2.5 V             :         : 7         : N              
+index_vector[63]             : K18       : input  : 2.5 V             :         : 7         : N              
+data_12_[6]                  : K19       : input  : 2.5 V             :         : 7         : N              
+GND                          : K20       : gnd    :                   :         :           :                
+index_vector[12]             : K21       : input  : 2.5 V             :         : 7         : N              
+data_8_[3]                   : K22       : input  : 2.5 V             :         : 7         : N              
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+data_11_[11]                 : K24       : input  : 2.5 V             :         : 6         : N              
+data_9_[12]                  : K25       : input  : 2.5 V             :         : 6         : N              
+data_13_[10]                 : K26       : input  : 2.5 V             :         : 6         : N              
+data_4_[9]                   : K27       : input  : 2.5 V             :         : 6         : N              
+data_0_[9]                   : K28       : input  : 2.5 V             :         : 6         : N              
+data_13_[9]                  : K29       : input  : 2.5 V             :         : 6         : N              
+data_5_[5]                   : K30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+data_7_[4]                   : L25       : input  : 2.5 V             :         : 6         : N              
+GND                          : L26       : gnd    :                   :         :           :                
+data_14_[12]                 : L27       : input  : 2.5 V             :         : 6         : N              
+data_8_[12]                  : L28       : input  : 2.5 V             :         : 6         : N              
+GND                          : L29       : gnd    :                   :         :           :                
+data_4_[7]                   : L30       : input  : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+selected4_[5]                : M21       : output : 2.5 V             :         : 6         : N              
+selected4_[15]               : M22       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+data_15_[3]                  : M25       : input  : 2.5 V             :         : 6         : N              
+selected1_[14]               : M26       : output : 2.5 V             :         : 6         : N              
+data_12_[3]                  : M27       : input  : 2.5 V             :         : 6         : N              
+selected3_[5]                : M28       : output : 2.5 V             :         : 6         : N              
+data_12_[4]                  : M29       : input  : 2.5 V             :         : 6         : N              
+index_vector[62]             : M30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+data_7_[15]                  : N21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+data_0_[5]                   : N24       : input  : 2.5 V             :         : 6         : N              
+index4_[14]                  : N25       : output : 2.5 V             :         : 6         : N              
+data_6_[15]                  : N26       : input  : 2.5 V             :         : 6         : N              
+selected1_[7]                : N27       : output : 2.5 V             :         : 6         : N              
+index3_[15]                  : N28       : output : 2.5 V             :         : 6         : N              
+data_12_[10]                 : N29       : input  : 2.5 V             :         : 6         : N              
+selected1_[6]                : N30       : output : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+data_0_[6]                   : P21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+data_0_[11]                  : P25       : input  : 2.5 V             :         : 6         : N              
+GND                          : P26       : gnd    :                   :         :           :                
+selected1_[4]                : P27       : output : 2.5 V             :         : 6         : N              
+data_8_[7]                   : P28       : input  : 2.5 V             :         : 6         : N              
+GND                          : P29       : gnd    :                   :         :           :                
+selected2_[2]                : P30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+index_vector[47]             : R24       : input  : 2.5 V             :         : 6         : N              
+data_14_[15]                 : R25       : input  : 2.5 V             :         : 6         : N              
+data_7_[9]                   : R26       : input  : 2.5 V             :         : 6         : N              
+data_9_[3]                   : R27       : input  : 2.5 V             :         : 6         : N              
+data_3_[7]                   : R28       : input  : 2.5 V             :         : 6         : N              
+selected2_[10]               : R29       : output : 2.5 V             :         : 6         : N              
+selected2_[7]                : R30       : output : 2.5 V             :         : 6         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+data_3_[4]                   : T21       : input  : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+selected2_[11]               : T23       : output : 2.5 V             :         : 5         : N              
+data_11_[2]                  : T24       : input  : 2.5 V             :         : 5         : N              
+data_5_[3]                   : T25       : input  : 2.5 V             :         : 5         : N              
+selected1_[15]               : T26       : output : 2.5 V             :         : 5         : N              
+selected1_[9]                : T27       : output : 2.5 V             :         : 5         : N              
+selected2_[8]                : T28       : output : 2.5 V             :         : 6         : N              
+GND+                         : T29       :        :                   :         : 6         :                
+GND+                         : T30       :        :                   :         : 6         :                
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+selected1_[3]                : U21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+selected2_[4]                : U25       : output : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+data_1_[4]                   : U27       : input  : 2.5 V             :         : 5         : N              
+selected1_[12]               : U28       : output : 2.5 V             :         : 5         : N              
+GND                          : U29       : gnd    :                   :         :           :                
+data_14_[4]                  : U30       : input  : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+GXB_GND*                     : V12       :        :                   :         : 3B        :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+GXB_GND*                     : V15       :        :                   :         : 3A        :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+selected1_[11]               : V21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+data_2_[4]                   : V25       : input  : 2.5 V             :         : 5         : N              
+selected1_[8]                : V26       : output : 2.5 V             :         : 5         : N              
+data_11_[14]                 : V27       : input  : 2.5 V             :         : 5         : N              
+data_11_[5]                  : V28       : input  : 2.5 V             :         : 5         : N              
+GND+                         : V29       :        :                   :         : 5         :                
+GND+                         : V30       :        :                   :         : 5         :                
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+clock                        : W15       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+selected2_[6]                : W25       : output : 2.5 V             :         : 5         : N              
+data_5_[4]                   : W26       : input  : 2.5 V             :         : 5         : N              
+selected1_[2]                : W27       : output : 2.5 V             :         : 5         : N              
+selected3_[4]                : W28       : output : 2.5 V             :         : 5         : N              
+selected2_[12]               : W29       : output : 2.5 V             :         : 5         : N              
+data_0_[15]                  : W30       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+data_5_[10]                  : Y17       : input  : 2.5 V             :         : 4         : N              
+data_10_[4]                  : Y18       : input  : 2.5 V             :         : 4         : N              
+index_vector[30]             : Y19       : input  : 2.5 V             :         : 4         : N              
+data_15_[5]                  : Y20       : input  : 2.5 V             :         : 4         : N              
+index1_[0]                   : Y21       : output : 2.5 V             :         : 4         : N              
+selected2_[15]               : Y22       : output : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+index1_[11]                  : Y25       : output : 2.5 V             :         : 5         : N              
+GND                          : Y26       : gnd    :                   :         :           :                
+index1_[7]                   : Y27       : output : 2.5 V             :         : 5         : N              
+selected1_[10]               : Y28       : output : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+data_14_[1]                  : Y30       : input  : 2.5 V             :         : 5         : N              

@@ -1,0 +1,14 @@
+\usepackage{template/template}
+
+\newcommand{\eitem}[2]{
+	\item
+	\vspace{0.5cm}
+	\begin{tcolorbox}[colback=black!10!white,colframe=black!50!black,title={سوال \they}]
+		\input{#1} 
+  	\end{tcolorbox}
+	\vspace{0.5cm}
+
+	\noindent \input{#2}
+	\newpage
+	\addtocounter{y}{1}
+}

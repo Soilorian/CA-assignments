@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="full_adder_1_bit">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst16|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst16|mux_4:inst3|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst17|mux_4:inst3|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst19|mux_4:inst|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:instance|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:instance|mux_4:inst3|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst17|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst17|mux_4:inst3|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst19|mux_4:inst3|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst19|mux_4:inst3|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst15|mux_4:inst|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst16|mux_4:inst|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst19|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst19|mux_4:inst3|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst20|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst20|mux_4:inst3|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:instance|mux_4:inst|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst15|mux_4:inst|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst16|mux_4:inst|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst17|mux_4:inst|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:instance|mux_4:inst|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst15|mux_4:inst3|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst16|mux_4:inst|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst17|mux_4:inst|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:instance|mux_4:inst|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst15|mux_4:inst3|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst16|mux_4:inst3|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst17|mux_4:inst|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst19|mux_4:inst|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst20|mux_4:inst|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:instance|mux_4:inst3|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst15|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst15|mux_4:inst3|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst16|mux_4:inst3|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst17|mux_4:inst3|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst19|mux_4:inst|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst20|mux_4:inst|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:instance|mux_4:inst3|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst20|mux_4:inst|BUSMUX:mux2|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst20|mux_4:inst3|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst15|mux_4:inst|BUSMUX:mux|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Q1|mux_8:inst20|mux_4:inst3|BUSMUX:mux1|lpm_mux:$00000" CBX_FILE_NAME="mux_p6c.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,1180 @@
+Analysis & Synthesis report for gather
+Thu Mar 07 00:41:56 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: BUSMUX:inst25
+ 12. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst4|BUSMUX:inst2
+ 13. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst4|BUSMUX:inst
+ 14. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst4|BUSMUX:inst1
+ 15. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst|BUSMUX:inst2
+ 16. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst|BUSMUX:inst
+ 17. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst|BUSMUX:inst1
+ 18. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst3|BUSMUX:inst2
+ 19. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst3|BUSMUX:inst
+ 20. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst3|BUSMUX:inst1
+ 21. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst1|BUSMUX:inst2
+ 22. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst1|BUSMUX:inst
+ 23. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst1|BUSMUX:inst1
+ 24. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst2|BUSMUX:inst2
+ 25. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst2|BUSMUX:inst
+ 26. Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst2|BUSMUX:inst1
+ 27. Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst27|lpm_constant:LPM_CONSTANT_component
+ 28. Parameter Settings for User Entity Instance: BUSMUX:inst26
+ 29. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst4|BUSMUX:inst2
+ 30. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst4|BUSMUX:inst
+ 31. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst4|BUSMUX:inst1
+ 32. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst|BUSMUX:inst2
+ 33. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst|BUSMUX:inst
+ 34. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst|BUSMUX:inst1
+ 35. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst3|BUSMUX:inst2
+ 36. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst3|BUSMUX:inst
+ 37. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst3|BUSMUX:inst1
+ 38. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst1|BUSMUX:inst2
+ 39. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst1|BUSMUX:inst
+ 40. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst1|BUSMUX:inst1
+ 41. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst2|BUSMUX:inst2
+ 42. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst2|BUSMUX:inst
+ 43. Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst2|BUSMUX:inst1
+ 44. Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst28|lpm_constant:LPM_CONSTANT_component
+ 45. Parameter Settings for User Entity Instance: BUSMUX:inst29
+ 46. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst4|BUSMUX:inst2
+ 47. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst4|BUSMUX:inst
+ 48. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst4|BUSMUX:inst1
+ 49. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst|BUSMUX:inst2
+ 50. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst|BUSMUX:inst
+ 51. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst|BUSMUX:inst1
+ 52. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst3|BUSMUX:inst2
+ 53. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst3|BUSMUX:inst
+ 54. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst3|BUSMUX:inst1
+ 55. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst1|BUSMUX:inst2
+ 56. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst1|BUSMUX:inst
+ 57. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst1|BUSMUX:inst1
+ 58. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst2|BUSMUX:inst2
+ 59. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst2|BUSMUX:inst
+ 60. Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst2|BUSMUX:inst1
+ 61. Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst30|lpm_constant:LPM_CONSTANT_component
+ 62. Parameter Settings for User Entity Instance: BUSMUX:inst31
+ 63. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst4|BUSMUX:inst2
+ 64. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst4|BUSMUX:inst
+ 65. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst4|BUSMUX:inst1
+ 66. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst|BUSMUX:inst2
+ 67. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst|BUSMUX:inst
+ 68. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst|BUSMUX:inst1
+ 69. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst3|BUSMUX:inst2
+ 70. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst3|BUSMUX:inst
+ 71. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst3|BUSMUX:inst1
+ 72. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst1|BUSMUX:inst2
+ 73. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst1|BUSMUX:inst
+ 74. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst1|BUSMUX:inst1
+ 75. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst2|BUSMUX:inst2
+ 76. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst2|BUSMUX:inst
+ 77. Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst2|BUSMUX:inst1
+ 78. Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst32|lpm_constant:LPM_CONSTANT_component
+ 79. Elapsed Time Per Partition
+ 80. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Mar 07 00:41:56 2024      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; gather                                     ;
+; Top-level Entity Name              ; gather                                     ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 972                                        ;
+;     Total combinational functions  ; 716                                        ;
+;     Dedicated logic registers      ; 256                                        ;
+; Total registers                    ; 256                                        ;
+; Total pins                         ; 449                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; gather             ; gather             ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++--------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ; Library ;
++--------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+; ../Exercise2_amir7/register_8bit.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/HWs/Exercise2_amir7/register_8bit.bdf                        ;         ;
+; gather.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/HWs/p2_mahdi/gather.bdf                                      ;         ;
+; register_2bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/HWs/p2_mahdi/register_2bit.bdf                               ;         ;
+; mux4to1_16bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/HWs/p2_mahdi/mux4to1_16bit.bdf                               ;         ;
+; mux16to1_16bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/HWs/p2_mahdi/mux16to1_16bit.bdf                              ;         ;
+; lpm_constant_minusOne.vhd            ; yes             ; User Wizard-Generated File         ; D:/HWs/p2_mahdi/lpm_constant_minusOne.vhd                       ;         ;
+; or12_bus_input.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/HWs/p2_mahdi/or12_bus_input.bdf                              ;         ;
+; register_8byte.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/HWs/p2_mahdi/register_8byte.bdf                              ;         ;
+; busmux.tdf                           ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/busmux.tdf       ;         ;
+; lpm_mux.inc                          ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc      ;         ;
+; lpm_mux.tdf                          ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.tdf      ;         ;
+; aglobal131.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc   ;         ;
+; muxlut.inc                           ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/muxlut.inc       ;         ;
+; bypassff.inc                         ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/bypassff.inc     ;         ;
+; altshift.inc                         ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altshift.inc     ;         ;
+; db/mux_n0d.tdf                       ; yes             ; Auto-Generated Megafunction        ; D:/HWs/p2_mahdi/db/mux_n0d.tdf                                  ;         ;
+; lpm_constant.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_constant.tdf ;         ;
++--------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 449              ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clock~input      ;
+; Maximum fan-out          ; 256              ;
+; Total fan-out            ; 3953             ;
+; Average fan-out          ; 2.11             ;
++--------------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                   ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                  ; Library Name ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
+; |gather                                 ; 716 (0)           ; 256 (0)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 449  ; 0            ; |gather                                                                                              ; work         ;
+;    |busmux:inst25|                      ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst25                                                                                ; work         ;
+;       |lpm_mux:$00000|                  ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst25|lpm_mux:$00000                                                                 ; work         ;
+;          |mux_n0d:auto_generated|       ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst25|lpm_mux:$00000|mux_n0d:auto_generated                                          ; work         ;
+;    |busmux:inst26|                      ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst26                                                                                ; work         ;
+;       |lpm_mux:$00000|                  ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst26|lpm_mux:$00000                                                                 ; work         ;
+;          |mux_n0d:auto_generated|       ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst26|lpm_mux:$00000|mux_n0d:auto_generated                                          ; work         ;
+;    |busmux:inst29|                      ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst29                                                                                ; work         ;
+;       |lpm_mux:$00000|                  ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst29|lpm_mux:$00000                                                                 ; work         ;
+;          |mux_n0d:auto_generated|       ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst29|lpm_mux:$00000|mux_n0d:auto_generated                                          ; work         ;
+;    |busmux:inst31|                      ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst31                                                                                ; work         ;
+;       |lpm_mux:$00000|                  ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst31|lpm_mux:$00000                                                                 ; work         ;
+;          |mux_n0d:auto_generated|       ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|busmux:inst31|lpm_mux:$00000|mux_n0d:auto_generated                                          ; work         ;
+;    |mux16to1_16bit:inst22|              ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst22                                                                        ; work         ;
+;       |mux4to1_16bit:inst4|             ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst22|mux4to1_16bit:inst4                                                    ; work         ;
+;          |busmux:inst2|                 ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst22|mux4to1_16bit:inst4|busmux:inst2                                       ; work         ;
+;             |lpm_mux:$00000|            ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst22|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000                        ; work         ;
+;                |mux_n0d:auto_generated| ; 160 (160)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst22|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated ; work         ;
+;    |mux16to1_16bit:inst23|              ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst23                                                                        ; work         ;
+;       |mux4to1_16bit:inst4|             ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst23|mux4to1_16bit:inst4                                                    ; work         ;
+;          |busmux:inst2|                 ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst23|mux4to1_16bit:inst4|busmux:inst2                                       ; work         ;
+;             |lpm_mux:$00000|            ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst23|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000                        ; work         ;
+;                |mux_n0d:auto_generated| ; 160 (160)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst23|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated ; work         ;
+;    |mux16to1_16bit:inst24|              ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst24                                                                        ; work         ;
+;       |mux4to1_16bit:inst4|             ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst24|mux4to1_16bit:inst4                                                    ; work         ;
+;          |busmux:inst2|                 ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst24|mux4to1_16bit:inst4|busmux:inst2                                       ; work         ;
+;             |lpm_mux:$00000|            ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst24|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000                        ; work         ;
+;                |mux_n0d:auto_generated| ; 160 (160)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst24|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated ; work         ;
+;    |mux16to1_16bit:inst|                ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst                                                                          ; work         ;
+;       |mux4to1_16bit:inst4|             ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst|mux4to1_16bit:inst4                                                      ; work         ;
+;          |busmux:inst2|                 ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst|mux4to1_16bit:inst4|busmux:inst2                                         ; work         ;
+;             |lpm_mux:$00000|            ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000                          ; work         ;
+;                |mux_n0d:auto_generated| ; 160 (160)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|mux16to1_16bit:inst|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated   ; work         ;
+;    |or12_bus_input:inst34|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|or12_bus_input:inst34                                                                        ; work         ;
+;    |or12_bus_input:inst35|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|or12_bus_input:inst35                                                                        ; work         ;
+;    |or12_bus_input:inst36|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|or12_bus_input:inst36                                                                        ; work         ;
+;    |or12_bus_input:inst37|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|or12_bus_input:inst37                                                                        ; work         ;
+;    |register_2bit:R0|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R0                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R0|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R0|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R10|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R10                                                                            ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R10|register_8bit:lower                                                        ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R10|register_8bit:upper                                                        ; work         ;
+;    |register_2bit:R11|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R11                                                                            ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R11|register_8bit:lower                                                        ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R11|register_8bit:upper                                                        ; work         ;
+;    |register_2bit:R12|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R12                                                                            ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R12|register_8bit:lower                                                        ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R12|register_8bit:upper                                                        ; work         ;
+;    |register_2bit:R13|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R13                                                                            ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R13|register_8bit:lower                                                        ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R13|register_8bit:upper                                                        ; work         ;
+;    |register_2bit:R14|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R14                                                                            ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R14|register_8bit:lower                                                        ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R14|register_8bit:upper                                                        ; work         ;
+;    |register_2bit:R15|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R15                                                                            ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R15|register_8bit:lower                                                        ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R15|register_8bit:upper                                                        ; work         ;
+;    |register_2bit:R1|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R1                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R1|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R1|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R2|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R2                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R2|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R2|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R3|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R3                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R3|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R3|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R4|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R4                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R4|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R4|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R5|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R5                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R5|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R5|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R6|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R6                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R6|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R6|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R7|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R7                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R7|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R7|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R8|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R8                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R8|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R8|register_8bit:upper                                                         ; work         ;
+;    |register_2bit:R9|                   ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R9                                                                             ; work         ;
+;       |register_8bit:lower|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R9|register_8bit:lower                                                         ; work         ;
+;       |register_8bit:upper|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |gather|register_2bit:R9|register_8bit:upper                                                         ; work         ;
++-----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                            ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+-------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                      ; IP Include File                           ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+-------------------------------------------+
+; Altera ; LPM_CONSTANT ; 13.1    ; N/A          ; N/A          ; |gather|lpm_constant_minusOne:inst27 ; D:/HWs/p2_mahdi/lpm_constant_minusOne.vhd ;
+; Altera ; LPM_CONSTANT ; 13.1    ; N/A          ; N/A          ; |gather|lpm_constant_minusOne:inst28 ; D:/HWs/p2_mahdi/lpm_constant_minusOne.vhd ;
+; Altera ; LPM_CONSTANT ; 13.1    ; N/A          ; N/A          ; |gather|lpm_constant_minusOne:inst30 ; D:/HWs/p2_mahdi/lpm_constant_minusOne.vhd ;
+; Altera ; LPM_CONSTANT ; 13.1    ; N/A          ; N/A          ; |gather|lpm_constant_minusOne:inst32 ; D:/HWs/p2_mahdi/lpm_constant_minusOne.vhd ;
++--------+--------------+---------+--------------+--------------+--------------------------------------+-------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 256   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------+
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |gather|mux16to1_16bit:inst|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated|result_node[15]   ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |gather|mux16to1_16bit:inst22|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated|result_node[15] ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |gather|mux16to1_16bit:inst23|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated|result_node[15] ;
+; 16:1               ; 16 bits   ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |gather|mux16to1_16bit:inst24|mux4to1_16bit:inst4|busmux:inst2|lpm_mux:$00000|mux_n0d:auto_generated|result_node[15] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst25 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst4|BUSMUX:inst2 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst4|BUSMUX:inst ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst4|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst|BUSMUX:inst2 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst|BUSMUX:inst ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst|BUSMUX:inst1 ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst3|BUSMUX:inst2 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst3|BUSMUX:inst ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst3|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst1|BUSMUX:inst2 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst1|BUSMUX:inst ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst1|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst2|BUSMUX:inst2 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst2|BUSMUX:inst ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst|mux4to1_16bit:inst2|BUSMUX:inst1 ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst27|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                  ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; LPM_WIDTH          ; 16               ; Signed Integer                                                        ;
+; LPM_CVALUE         ; 65535            ; Signed Integer                                                        ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                               ;
+; CBXI_PARAMETER     ; lpm_constant_1r6 ; Untyped                                                               ;
++--------------------+------------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst26 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst4|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst4|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst4|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst|BUSMUX:inst2 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst|BUSMUX:inst ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst3|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst3|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst3|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst1|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst1|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst1|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst2|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst2|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst22|mux4to1_16bit:inst2|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst28|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                  ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; LPM_WIDTH          ; 16               ; Signed Integer                                                        ;
+; LPM_CVALUE         ; 65535            ; Signed Integer                                                        ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                               ;
+; CBXI_PARAMETER     ; lpm_constant_1r6 ; Untyped                                                               ;
++--------------------+------------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst29 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst4|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst4|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst4|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst|BUSMUX:inst2 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst|BUSMUX:inst ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst3|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst3|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst3|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst1|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst1|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst1|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst2|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst2|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst23|mux4to1_16bit:inst2|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst30|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                  ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; LPM_WIDTH          ; 16               ; Signed Integer                                                        ;
+; LPM_CVALUE         ; 65535            ; Signed Integer                                                        ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                               ;
+; CBXI_PARAMETER     ; lpm_constant_1r6 ; Untyped                                                               ;
++--------------------+------------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst31 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst4|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst4|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst4|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst|BUSMUX:inst2 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst|BUSMUX:inst ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst|BUSMUX:inst1 ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst3|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst3|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst3|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst1|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst1|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst1|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst2|BUSMUX:inst2 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst2|BUSMUX:inst ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux16to1_16bit:inst24|mux4to1_16bit:inst2|BUSMUX:inst1 ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant_minusOne:inst32|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                  ;
++--------------------+------------------+-----------------------------------------------------------------------+
+; LPM_WIDTH          ; 16               ; Signed Integer                                                        ;
+; LPM_CVALUE         ; 65535            ; Signed Integer                                                        ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                               ;
+; CBXI_PARAMETER     ; lpm_constant_1r6 ; Untyped                                                               ;
++--------------------+------------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:07     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Thu Mar 07 00:41:47 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gather -c gather
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /hws/exercise2_amir7/register_8bit.bdf
+    Info (12023): Found entity 1: register_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file /hws/exercise2_amir7/q1.bdf
+    Info (12023): Found entity 1: Q1
+Info (12021): Found 1 design units, including 1 entities, in source file /hws/exercise2_amir7/mux_8.bdf
+    Info (12023): Found entity 1: mux_8
+Info (12021): Found 1 design units, including 1 entities, in source file /hws/exercise2_amir7/mux_4.bdf
+    Info (12023): Found entity 1: mux_4
+Info (12021): Found 1 design units, including 1 entities, in source file /hws/exercise2_amir7/full_adder_8_bit.bdf
+    Info (12023): Found entity 1: full_adder_8_bit
+Info (12021): Found 1 design units, including 1 entities, in source file /hws/exercise2_amir7/alu.bdf
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file /hws/exercise2_amir7/full_adder_1_bit.bdf
+    Info (12023): Found entity 1: full_adder_1_bit
+Info (12021): Found 1 design units, including 1 entities, in source file gather.bdf
+    Info (12023): Found entity 1: gather
+Info (12021): Found 1 design units, including 1 entities, in source file register_2bit.bdf
+    Info (12023): Found entity 1: register_2bit
+Info (12021): Found 1 design units, including 1 entities, in source file mux4to1_16bit.bdf
+    Info (12023): Found entity 1: mux4to1_16bit
+Info (12021): Found 1 design units, including 1 entities, in source file mux16to1_16bit.bdf
+    Info (12023): Found entity 1: mux16to1_16bit
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant_minusone.vhd
+    Info (12022): Found design unit 1: lpm_constant_minusone-SYN
+    Info (12023): Found entity 1: lpm_constant_minusOne
+Info (12021): Found 1 design units, including 1 entities, in source file or12_bus_input.bdf
+    Info (12023): Found entity 1: or12_bus_input
+Info (12021): Found 1 design units, including 1 entities, in source file register_8byte.bdf
+    Info (12023): Found entity 1: register_8byte
+Info (12127): Elaborating entity "gather" for the top level hierarchy
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst25"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst25"
+Info (12133): Instantiated megafunction "BUSMUX:inst25" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst25|lpm_mux:$00000"
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst25|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst25"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_n0d.tdf
+    Info (12023): Found entity 1: mux_n0d
+Info (12128): Elaborating entity "mux_n0d" for hierarchy "BUSMUX:inst25|lpm_mux:$00000|mux_n0d:auto_generated"
+Info (12128): Elaborating entity "or12_bus_input" for hierarchy "or12_bus_input:inst37"
+Info (12128): Elaborating entity "mux16to1_16bit" for hierarchy "mux16to1_16bit:inst"
+Info (12128): Elaborating entity "mux4to1_16bit" for hierarchy "mux16to1_16bit:inst|mux4to1_16bit:inst4"
+Info (12128): Elaborating entity "register_2bit" for hierarchy "register_2bit:R8"
+Info (12128): Elaborating entity "register_8bit" for hierarchy "register_2bit:R8|register_8bit:lower"
+Info (12128): Elaborating entity "lpm_constant_minusOne" for hierarchy "lpm_constant_minusOne:inst27"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant_minusOne:inst27|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "lpm_constant_minusOne:inst27|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "lpm_constant_minusOne:inst27|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "65535"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "16"
+Info (12128): Elaborating entity "register_8byte" for hierarchy "register_8byte:inst2"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1421 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 321 input pins
+    Info (21059): Implemented 128 output pins
+    Info (21061): Implemented 972 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4725 megabytes
+    Info: Processing ended: Thu Mar 07 00:41:56 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
+
+

@@ -1,0 +1,14 @@
+\usepackage{template/template}
+
+\newcommand{\qitem}[2]{
+	\item
+	\vspace{0.5cm}
+	\begin{tcolorbox}[colback=green!10!white,colframe=green!50!black,title={قضیه \thex}]
+		\input{#1} 
+  	\end{tcolorbox}
+	\vspace{0.5cm}
+
+	\noindent \input{#2}
+	\newpage
+	\addtocounter{x}{1}
+}

@@ -1,0 +1,35 @@
+محاسبه می کنیم که از هر کلاس دستوری چند دستور استفاده می شود:
+\[
+fibonacci(i)=
+\begin{cases}
+(ALU: 3, Load: 1, Store: 2, Jump: 2, Branch: 1) & i<2\\
+fibonacci(i-1) + fibonacci(i-2) + (ALU: 6, Load: 4, Store: 2, Jump: 3, Branch: 1) & o.w
+\end{cases}\\
+\]
+\begin{equation*}
+base = (3, 1, 2, 2, 1),
+regular = (6, 4, 2, 3, 1)
+\end{equation*}
+حال ما
+$
+fibonacci(4)
+$
+را میخواهیم
+\begin{equation*}
+  \begin{aligned}
+    fibonacci(4) & = fibonacci(3) + fibonacci(2) + regular\\
+      & = fibonacci(2) + fibbonaci(1) + regular + fibonacci(1) + fibonacci(0) + regular + regular\\
+      & = fibonacci(1) + fibonacci(0) + regular + base + regular + base + base + regular + regular\\
+      & = 5 * base + 4 * regular\\
+      & = (39, 21, 18, 22, 9)
+  \end{aligned}
+\end{equation*}
+حال
+CPI
+برنامه را حساب می کنینم
+\begin{equation*}
+  {CPI} = \frac{39*0.5 + 21*1.5 + 18*0.9 + 22*1 + 9*0.8}{109} = \frac{96.4}{109}
+\end{equation*}
+\begin{equation*}
+  {t} = \frac{{CPI} * {IC}}{f} = \frac{96.4}{9 * 10^9} \approx 10.7 * 10^{-9}
+\end{equation*}

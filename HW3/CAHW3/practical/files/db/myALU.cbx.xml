@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="myALU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|Add_8bit:inst1|CSA_8bit:inst|BUSMUX:instance|lpm_mux:$00000" CBX_FILE_NAME="mux_4vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|booth_multiplier_8bit:inst8|Add_8bit:inst4|CSA_8bit:inst|MUX:inst5|lpm_mux:$00001" CBX_FILE_NAME="mux_1vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|booth_multiplier_8bit:inst8|Sub_8bit:inst8|CSA_8bit:inst|BUSMUX:instance|lpm_mux:$00000" CBX_FILE_NAME="mux_4vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|booth_multiplier_8bit:inst8|mux4to1_8bit:inst2|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|mux4to1_8bit:inst13|BUSMUX:inst|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|Add_8bit:inst1|CSA_8bit:inst|MUX:inst5|lpm_mux:$00001" CBX_FILE_NAME="mux_1vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|Sub_8bit:inst5|CSA_8bit:inst|BUSMUX:instance|lpm_mux:$00000" CBX_FILE_NAME="mux_4vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|booth_multiplier_8bit:inst8|Sub_8bit:inst8|CSA_8bit:inst|MUX:inst5|lpm_mux:$00001" CBX_FILE_NAME="mux_1vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|mux4to1_8bit:inst13|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|BUSMUX:inst11|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|Sub_8bit:inst5|CSA_8bit:inst|MUX:inst5|lpm_mux:$00001" CBX_FILE_NAME="mux_1vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|booth_multiplier_8bit:inst8|mux4to1_8bit:inst2|BUSMUX:inst|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|mux4to1_8bit:inst13|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|BUSMUX:inst12|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|booth_multiplier_8bit:inst8|Add_8bit:inst4|CSA_8bit:inst|BUSMUX:instance|lpm_mux:$00000" CBX_FILE_NAME="mux_4vc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|myALU|booth_multiplier_8bit:inst8|mux4to1_8bit:inst2|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_8vc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
